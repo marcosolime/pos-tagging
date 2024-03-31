@@ -10,12 +10,12 @@ In this task we train a custom model on a labelled dataset. This dataset consist
 
 After downloading the corpus ([Penn Treebank](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)), we create a vocabulary of words leveraging [GloVe embeddings](https://nlp.stanford.edu/projects/glove/). We use such vocabulary to tokenize our dataset and as a lookup table (or embedding matrix) in the Embedding layer of our neural model.
 
-We try 3 different models. All of them are include recurrent neural networks.
+We try 3 different models. All of them include recurrent neural networks.
 - Baseline: Embedding layer, Bidirectional LSTM, Dense layer
 - Model 1: similar to the baseline, but with 2 LSTMs instead of 1
 - Model 2: similar to the baseline, but with 2 dense layers
 
-All of the models are comperable in term of parameters (20 millions).
+All of the models are comparable in term of parameters (20 millions).
 
 The embedding layers are pre-initialized with GloVe embeddings and kept frozen during training.
 
