@@ -1,6 +1,6 @@
 # Assignment 1 - POS tagging
 
-![POS tagging](/img/pos_tagging.png)
+![POS tagging](/img/tag_counts.png)
 
 ## Task description
 Part-of-Speech (POS) tagging is an NLP task that involves assigning a grammatical category (part of speech) to each word in a sentence. These categories include nouns, verbs, adjectives, adverbs, pronouns, etc.
@@ -8,7 +8,7 @@ Part-of-Speech (POS) tagging is an NLP task that involves assigning a grammatica
 ## Workflow
 In this task we train a custom model on a labelled dataset. This dataset consists of a set of documents, where each word has its POS label associated. We train our model on a subset of this dataset, and test it on another subset.
 
-After downloading the corpus (![Penn Treebank](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)), we create a vocabulary of words leveraging ![GloVe embeddings](https://nlp.stanford.edu/projects/glove/). We use such vocabulary to tokenize our dataset and as a lookup table (or embedding matrix) in the Embedding layer of our neural model.
+After downloading the corpus ([Penn Treebank](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)), we create a vocabulary of words leveraging [GloVe embeddings](https://nlp.stanford.edu/projects/glove/). We use such vocabulary to tokenize our dataset and as a lookup table (or embedding matrix) in the Embedding layer of our neural model.
 
 We try 3 different models. All of them are include recurrent neural networks.
 - Baseline: Embedding layer, Bidirectional LSTM, Dense layer
